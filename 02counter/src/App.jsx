@@ -5,10 +5,11 @@ import "./App.css";
 
 function App() {
   let [counter, setCounter] = useState(15);
+    let [message, setMessage] = useState(""); // 👈 new line
 
   const addValue = () => {
     if (counter >= 20) {
-      console.log("You don't do more update because max value is 20");
+       setMessage("⚠️ You can’t go above 20!"); // 👈 show message on page
     } else {
       setCounter(counter + 1);
       console.log("clicked", counter);
@@ -17,7 +18,7 @@ function App() {
 
   const removeValue = () => {
     if (counter <= 0) {
-      console.log("You get downward to 0");
+        setMessage("⚠️ You can’t go below 0!"); // 👈 show message
     } else {
       setCounter(counter - 1);
       console.log("clicked", counter);
@@ -36,6 +37,9 @@ function App() {
       <br />
       <br />
       <p>Hello footer: {counter}</p>
+      <br />
+      <br />
+      <p style={{ color: "red", fontWeight: "bold" }}>limitaions for you :{message}</p>
     </>
   );
 }
