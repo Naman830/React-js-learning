@@ -4,22 +4,24 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-
- let [counter, setCounter] = useState(15)
-
-  // let counter = 15;
+  let [counter, setCounter] = useState(15);
 
   const addValue = () => {
-    // counter = counter + 1;
-    setCounter(counter + 1)
-    console.log("clicked", counter);
-
+    if (counter >= 20) {
+      console.log("You don't do more update because max value is 20");
+    } else {
+      setCounter(counter + 1);
+      console.log("clicked", counter);
+    }
   };
 
   const removeValue = () => {
-    setCounter(counter - 1)
-    console.log("clicked", counter);
-    
+    if (counter <= 0) {
+      console.log("You get downward to 0");
+    } else {
+      setCounter(counter - 1);
+      console.log("clicked", counter);
+    }
   };
 
   return (
