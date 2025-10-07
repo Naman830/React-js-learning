@@ -1,8 +1,9 @@
+import Cook from "./cook";
 
 function App() {
   return (
-    <h1>Code Cook and Naman React</h1>
-  )
+    <Cook />
+  );
 }
 
-export default App
+export default App;

@@ -1,7 +1,11 @@
+import Cook from './cook'
 
 function App() {
   return (
-    <h1>Code Cook and React</h1>
+    <>
+    <p>hey coder i don't ike chai but cook</p>
+    <Cook />
+    </>
   );
 }
 
