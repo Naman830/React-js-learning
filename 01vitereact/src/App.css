@@ -1,0 +1,12 @@
+.test{
+    color: red;
+    background-color: #111;
+    font-size: 50px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.test:hover{
+    color: blue;
+    background-color: white;
+}

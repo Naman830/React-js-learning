@@ -1,0 +1,12 @@
+.test{
+    color: rgb(106, 0, 255);
+    background-color: #111;
+    font-size: 50px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.test:hover{
+    color: rgb(85, 255, 0);
+    background-color: white;
+}
