@@ -1,13 +1,15 @@
-
-import Hello from "./Hello"
+import Array from "./Array";
+import Hello from "./Hello";
+import Details from "./Details";
 
 function App() {
-
   return (
     <>
-    <Hello />
+      <Hello />
+      <Array />
+      <Details />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
