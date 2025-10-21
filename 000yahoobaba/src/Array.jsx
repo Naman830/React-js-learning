@@ -6,7 +6,9 @@ function Array() {
       <h1>Fruit List</h1>
       <ul>
         {fruits.map((fruit, index) => (
-            <li>{index} - {fruit}</li>
+          <li>
+            {index} - {fruit}
+          </li>
         ))}
       </ul>
     </>
